@@ -23,7 +23,8 @@ test:
   database: alpha-blog_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   host: ec2-174-129-33-167.compute-1.amazonaws.com
   database: db853aj14g027h
   username: qaxslvhlufhcmr
