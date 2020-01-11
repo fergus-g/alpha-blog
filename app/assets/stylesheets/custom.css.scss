@@ -8,20 +8,29 @@
   font-weight: bold;
 }
 
-// .navbar-brand {
-//   font-size: inherit;
-//   background-color:#2d246d;
-//   border-color:#2d246d;
-//   color:#2d246d;
-//   }
-//  .navbar-collapse
-//     {
-//     background-color:#2d246d;
-//     border-color:#2d246d;
-//     color:#2d246d;
-//      }
-// .navbar-inverse .container {
-//    background-color:#2d246d;
-//    border-color:#2d246d;
-//    color:#2d246d;
-//    }
+.center {
+  text-align: center;
+}
+
+.jumbotron{
+  background-image:asset-url("ruby-on-rails.jpg");
+  background-size: cover;
+  height: 550px;
+
+}
+
+.jumbotron h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 100px
+
+}
+
+.btn-xlarge {
+font-size: 1.7em;
+
+}
+
+.bg-primary{
+  color: #0099ff;
+}
