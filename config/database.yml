@@ -24,10 +24,18 @@ test:
 
 production:
   # adapter: postgresql
-   encoding: unicode
-   host: ec2-174-129-33-167.compute-1.amazonaws.com
-   database: db853aj14g027h
-   username: qaxslvhlufhcmr
-   port: 5432
-  password: a6a47473cf08233c45193ca33051907985caa5350c913ae52746f4be0db5976f
-  url: <%= ENV['DATABASE_URL'] %>
+#   encoding: unicode
+#   host: ec2-174-129-33-167.compute-1.amazonaws.com
+#   database: db853aj14g027h
+#   username: qaxslvhlufhcmr
+#   port: 5432
+#  password: a6a47473cf08233c45193ca33051907985caa5350c913ae52746f4be0db5976f
+#  url: <%= ENV['DATABASE_URL'] %>
+
+Host: ec2-174-129-33-167.compute-1.amazonaws.com
+Database: db853aj14g027h
+User: qaxslvhlufhcmr
+Port: 5432
+Password: a6a47473cf08233c45193ca33051907985caa5350c913ae52746f4be0db5976f
+URI: postgres://qaxslvhlufhcmr:a6a47473cf08233c45193ca33051907985caa5350c913ae52746f4be0db5976f@ec2-174-129-33-167.compute-1.amazonaws.com:5432/db853aj14g027h
+Heroku CLI: heroku pg:psql postgresql-tetrahedral-45466 --app riding-ror
