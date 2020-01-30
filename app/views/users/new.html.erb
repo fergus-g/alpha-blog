@@ -1,3 +1,5 @@
+<h1 align="center">Sign up for Riding Ruby on Rails</h1>
+
 <%= render 'shared/errors' , obj: @user%>
 <div class='row'>
   <div class='col-xs-20'>
@@ -15,7 +17,7 @@
         <%= f.label :email %>
       </div>
       <div class="col-sm-50">
-        <%= f.email.field :email, class: "form-control", placeholder: "Enter Email..." %>
+        <%= f.email_field :email, class: "form-control", placeholder: "Enter Email..." %>
       </div>
     </div>
     <div class="form-group">
@@ -28,7 +30,7 @@
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <%= f.submit class: 'btn btn-primary btn-lg' %>
+        <%= f.submit "Sign Up", class: 'btn btn-primary btn-lg' %>
       </div>
     </div>
   <% end %>
