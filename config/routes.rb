@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   #get 'articles' to: 'pages#articles'
 
   resources :articles
+
+  get 'signup', to: 'users#new'
 end
