@@ -50,7 +50,7 @@ end
       @article = Article.find(params[:id])
     end
     def require_same_user
-      if current_user != @article.user
+      if current_user != @article.user and !current_user.admin?
         flash[:danger] = "You didnt write this article"
         redirect_to root_path
     end
