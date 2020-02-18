@@ -1,30 +1,45 @@
 class CategoriesController < ApplicationController
 
-  def index
-    @categories = Category.all
-  end
+def index
 
-  def new
-    @category = Category.new
-  end
+  @categories = Category.paginate(page: params[:page], per_page: 5)
 
-  def create
-    @category = Category.new(category_params)
+end
+
+def new
+
+  @category = Category.new
+
+end
+
+def create
+
+  @category = Category.new(category_params)
+
     if @category.save
+
       flash[:success] = "Category was created successfully"
+
       redirect_to categories_path
 
-    else render 'new'
-    end
-  end
+    else
 
-  def show
+      render 'new'
 
-  end
+end
 
+end
+
+def show
+
+end
 
 private
+
 def category_params
-    params.require(:category).permit(:name)
-  end
-    end
+
+  params.require(:category).permit(:name)
+
+end
+
+end
